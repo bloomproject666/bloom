@@ -47,7 +47,7 @@ npx prisma db seed
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the app.
+Open [usebloom.org](usebloom.org) to see the app.
 
 ## Environment Variables
 
