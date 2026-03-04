@@ -12,8 +12,15 @@ export default function Header() {
     <header className="border-b border-[#E5E7EB] bg-white sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
         {/* Wordmark */}
-        <Link href="/" className="text-xl font-bold tracking-tight text-[#111111] hover:text-[#F97316] transition-colors">
-          Bloom
+        <Link href="/" className="flex items-center gap-2 group">
+          <img
+            src="/logo.jpg"
+            alt="Bloom logo"
+            className="w-7 h-7 rounded-sm"
+          />
+          <span className="text-xl font-bold tracking-tight text-[#111111] group-hover:text-[#F97316] transition-colors">
+            Bloom
+          </span>
         </Link>
 
         {/* Nav */}
