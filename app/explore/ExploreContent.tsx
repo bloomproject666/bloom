@@ -59,18 +59,18 @@ export default async function ExploreContent({
   return (
     <>
       {/* Page title */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[#111111] mb-1">Explore agents</h1>
+      <div className="mb-6 sm:mb-8">
+        <h1 className="text-xl sm:text-2xl font-bold text-[#111111] mb-1">Explore agents</h1>
         <p className="text-[#6B7280] text-sm">{total} agent{total !== 1 ? 's' : ''} available</p>
       </div>
 
       {/* Search */}
-      <div className="mb-6">
+      <div className="mb-5 sm:mb-6">
         <SearchBar defaultValue={q} />
       </div>
 
       {/* Tags */}
-      <div className="mb-8">
+      <div className="mb-6 sm:mb-8">
         <TagFilter allTags={ALL_TAGS} selectedTags={tags ? tags.split(',') : []} currentQ={q} />
       </div>
 

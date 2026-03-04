@@ -43,12 +43,12 @@ export default async function HomePage() {
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-[#E5E7EB]">
-          <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 md:py-28">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-[#111111] leading-tight tracking-tight mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#111111] leading-tight tracking-tight mb-4">
                 The open registry for AI agents.
               </h1>
-              <p className="text-lg text-[#6B7280] mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-[#6B7280] mb-7 leading-relaxed">
                 Publish, discover, and deploy agents built for the modern AI stack. Free and open source.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -69,26 +69,26 @@ export default async function HomePage() {
 
         {/* Stats */}
         <section className="border-b border-[#E5E7EB]">
-          <div className="max-w-6xl mx-auto px-6 py-10">
-            <div className="grid grid-cols-3 gap-8 max-w-lg">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-lg">
               <div>
-                <p className="text-3xl font-bold text-[#111111] tabular-nums">{stats.totalAgents}</p>
-                <p className="text-sm text-[#6B7280] mt-1">agents published</p>
+                <p className="text-2xl sm:text-3xl font-bold text-[#111111] tabular-nums">{stats.totalAgents}</p>
+                <p className="text-xs sm:text-sm text-[#6B7280] mt-1">agents</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-[#111111] tabular-nums">{stats.totalDevelopers}</p>
-                <p className="text-sm text-[#6B7280] mt-1">developers</p>
+                <p className="text-2xl sm:text-3xl font-bold text-[#111111] tabular-nums">{stats.totalDevelopers}</p>
+                <p className="text-xs sm:text-sm text-[#6B7280] mt-1">developers</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-[#111111] tabular-nums">{stats.totalStars}</p>
-                <p className="text-sm text-[#6B7280] mt-1">total stars</p>
+                <p className="text-2xl sm:text-3xl font-bold text-[#111111] tabular-nums">{stats.totalStars}</p>
+                <p className="text-xs sm:text-sm text-[#6B7280] mt-1">stars</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Recent agents */}
-        <section className="max-w-6xl mx-auto px-6 py-12">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-lg font-semibold text-[#111111]">Recently published</h2>
             <Link href="/explore" className="text-sm text-[#F97316] hover:underline">
@@ -127,7 +127,7 @@ export default async function HomePage() {
 
         {/* CTA */}
         <section className="border-t border-[#E5E7EB]">
-          <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
             <div className="max-w-xl">
               <h2 className="text-2xl font-bold text-[#111111] mb-3">
                 Built for developers, designed for the ecosystem.

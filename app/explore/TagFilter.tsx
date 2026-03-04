@@ -32,14 +32,14 @@ export default function TagFilter({
   }
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex gap-2 overflow-x-auto pb-1 sm:flex-wrap sm:overflow-visible sm:pb-0" style={{ scrollbarWidth: 'none' }}>
       {allTags.map(tag => {
         const active = selectedTags.includes(tag)
         return (
           <button
             key={tag}
             onClick={() => toggleTag(tag)}
-            className={`text-xs px-3 py-1 rounded border transition-colors ${
+            className={`text-xs px-3 py-1.5 rounded border transition-colors whitespace-nowrap shrink-0 ${
               active
                 ? 'bg-[#F97316] text-white border-[#F97316]'
                 : 'bg-white text-[#6B7280] border-[#E5E7EB] hover:border-[#F97316] hover:text-[#F97316]'

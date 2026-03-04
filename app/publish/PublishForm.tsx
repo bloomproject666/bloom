@@ -185,7 +185,7 @@ export default function PublishForm({ username }: { username: string }) {
       </div>
 
       {/* Version + Tags row */}
-      <div className="grid sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium text-[#111111] mb-1.5">
             Version <span className="text-[#F97316]">*</span>
@@ -263,11 +263,11 @@ export default function PublishForm({ username }: { username: string }) {
         </div>
       )}
 
-      <div className="flex items-center gap-4 pt-2">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-2">
         <button
           type="submit"
           disabled={loading}
-          className="bg-[#F97316] text-white px-6 py-2.5 rounded text-sm font-medium hover:bg-[#ea6a05] transition-colors disabled:opacity-60"
+          className="w-full sm:w-auto bg-[#F97316] text-white px-6 py-3 sm:py-2.5 rounded text-sm font-medium hover:bg-[#ea6a05] transition-colors disabled:opacity-60"
         >
           {loading ? 'Publishing...' : 'Publish agent'}
         </button>

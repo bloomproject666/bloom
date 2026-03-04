@@ -20,7 +20,7 @@ export default async function PublishPage() {
     <div className="min-h-screen flex flex-col" style={{ fontFamily: 'IBM Plex Sans, system-ui, sans-serif' }}>
       <Header />
       <main className="flex-1">
-        <div className="max-w-3xl mx-auto px-6 py-12">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           <div className="mb-8">
             <h1 className="text-2xl font-bold text-[#111111] mb-1">Publish an agent</h1>
             <p className="text-[#6B7280] text-sm">
